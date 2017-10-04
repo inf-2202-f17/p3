@@ -40,7 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AceParsing.cs" />
+    <Compile Include="ClaimParsing.cs" />
     <Compile Include="BinaryStreamExtensions.cs" />
     <Compile Include="DataGeneration.cs" />
     <Compile Include="EncryptionHelper.cs" />
