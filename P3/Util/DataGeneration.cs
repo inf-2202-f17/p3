@@ -29,22 +29,22 @@ namespace Util
         }
 
         /// <summary>
-        /// Generates a string representation of a set of ACEs in Guid form.
+        /// Generates a string representation of a set of claims in Guid form.
         /// </summary>
-        /// <param name="numACEs">The number of ACEs that should be present in the set.</param>
+        /// <param name="numclaims">The number of claims that should be present in the set.</param>
         /// <returns>The string representation of the set.</returns>
-        static string GenerateStringACEs(int numACEs)
+        static string GenerateStringClaims(int numClaims)
         {
             // Implement this.
             throw new NotImplementedException();
         }
 
         /// <summary>
-        /// Generates a byte array representation of a set of ACEs in Guid form.
+        /// Generates a byte array representation of a set of claims in Guid form.
         /// </summary>
-        /// <param name="numACEs">The number of ACEs that should be present in the set.</param>
+        /// <param name="numclaims">The number of claims that should be present in the set.</param>
         /// <returns>The byte array representation of the set.</returns>
-        static byte[] GenerateByteArrayACEs(int numACEs)
+        static byte[] GenerateByteArrayClaims(int numClaims)
         {
             // Implement this.
             throw new NotImplementedException();
