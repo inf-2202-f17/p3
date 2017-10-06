@@ -6,8 +6,7 @@ The full assignment text is in [p3.pdf in the P3 folder](https://github.com/inf-
 
 # Practical info
 
-* This should as usual be cloned through [the classroom link](TODO). 
 * The deadline is Friday, November 3rd. at 23h00. 
 * The report should not be more than 3 pages long. 
-* We expect you to seriously report and discuss performance evaluation and the different things that the assignment text instructs you to consider. Follow the advice from Åge's and Steffen's lectures. Skip the technical background.
-* We expect you to have tried running in the cloud. The free trial asks you to provide a credit card, but spending real money after the trial credits run out is opt-in. So you shouldn't be nervous about your money.
+* We expect you to seriously report and discuss performance evaluation and the different things that the assignment text instructs you to consider. Follow the advice from Åge's and Steffen's lectures. Skip the technical background unless it pertains to your interpretation of the numbers.
+* We expect you to run your code in the cloud. The datalake free trial asks you to provide a credit card, but spending real money after the trial credits run out is opt-in. Hence you shouldn't be nervous about your money. That said, do keep an eye on your credits.
