@@ -21,7 +21,7 @@ namespace PerFileAccessLog
         DateTime FirstAccess;
         DateTime LastAccess;
 
-        private readonly string formatString = @"{0}, {1}, {2}, {3}, {4}, {5}, {6}" + Environment.NewLine;
+        private readonly string formatString = "{0}\t{1}\t{2}\t{3}\t{4}\t{5}\t{6}" + Environment.NewLine;
 
         /// <summary>
         /// Creates a per-file log entry for the given date.
@@ -69,7 +69,7 @@ namespace PerFileAccessLog
                 builder.AppendFormat("{0},", bogus.Email());
             }
 
-            builder.Remove(builder.Length - 2, 1);
+            builder.Remove(builder.Length - 1, 1);
             builder.Append("]");
 
             return builder.ToString();

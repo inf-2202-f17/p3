@@ -14,7 +14,7 @@ namespace SystemWideFileAccessLog
     public class SystemWideLogEntry
     {
         //DateTime of access, Region, TenantName, UserName, FileName, Status, Exception
-        private readonly string formatString = @"{0}, {1}, {2}, {3}, {4}, {5}, {6}" + Environment.NewLine;
+        private readonly string formatString = "{0}\t{1}\t{2}\t{3}\t{4}\t{5}\t{6}" + Environment.NewLine;
 
         /// <summary>
         /// Should return a SystemWide log entry. Should respect status and date parameters.
