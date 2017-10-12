@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 using Util;
 
 namespace PerFileAccessLog
@@ -57,22 +58,20 @@ namespace PerFileAccessLog
         /// Generates a JSON list representatin of a set of users represented by their email addresses.
         /// </summary>
         /// <returns></returns>
-        private string GenerateUsersString()
+        private static string GenerateUsersString()
         {
             var random = new Random();
-            var bogus = new Bogus.DataSets.Internet();
-            var builder = new StringBuilder("[");
-
             var numUsers = random.Next(1, 1000);
+            return JsonConvert.SerializeObject(UserEmail(numUsers));
+        }
+
+        private static IEnumerable<string> UserEmail(int numUsers)
+        {
+            var bogus = new Bogus.DataSets.Internet();
             for (int i = 0; i < numUsers; i++)
             {
-                builder.AppendFormat("{0},", bogus.Email());
+                yield return bogus.Email();
             }
-
-            builder.Remove(builder.Length - 1, 1);
-            builder.Append("]");
-
-            return builder.ToString();
         }
     }   
 }
